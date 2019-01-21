@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: RGB(54,39,86)
+}
+.images{
+    width: 318px;
+    height: 650px;
+    background: rgb(206, 245, 208);
+    border: 1px solid white;
+     margin-top: 70px;
+     text-align: center;
+}
+.imagePicker{
+   border: 1px solid black;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+   cursor: pointer;
+   margin-left: 100px;
+   margin-top: 40px;
+}
+.imagePicker:hover{
+   cursor: pointer;
+}
+
+.imagePicker img{
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: top;
+}
+.imagePicker input[type="file" i]{
+    position: absolute;
+    background: red;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.imagePicker .mask{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0,0,0,0.2);
+}
+.imagePicker:hover .mask{
+    display: flex;
+}
+.writing{
+    margin-top: 20px;
+}
